@@ -62,6 +62,9 @@
    [content/youtube-embed "UQYJiMAadZ4"]
 
 
+   [content/level-separator "books"]
+   [content/clojure-data-science-book (get-in @app-state [:website-assets :scicloj])]
+
 
    [content/level-separator "contact"]
    [content/contact (get @app-state :contact-channels)]

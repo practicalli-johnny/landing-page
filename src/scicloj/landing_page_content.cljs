@@ -101,6 +101,25 @@
 
 
 
+(defn clojure-data-science-book
+  [web-assets]
+  [:div {:class "container"}
+   [:div {:class "box"}
+    [:a {:href   "https://scicloj.github.io/scicloj-data-science-handbook/"
+         :target "_blank"}
+     [:h2 {:class "title is-2 has-text-centered"}
+      "Clojure Data Science Handbook"]
+     [:h6 {:class "title is-6 has-text-centered"}
+      "Live coding broadcasts to learn together"]
+     [:figure {:class "image"}
+      [:img {:src    (:banner web-assets)
+             :height "120px"}]]]
+    ]]
+
+  )
+
+
+
 
 (defn contact
   "Contact channels for the SciCloj community"
