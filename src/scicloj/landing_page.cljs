@@ -56,6 +56,11 @@
 
    [content/title-banner (get-in @app-state [:website-assets :scicloj])]
 
+   ;; Embed YouTube video
+   ;; TODO: improve layout? add several videos in a column?
+   [content/level-separator "videos-broadcasts"]
+   [content/youtube-embed "UQYJiMAadZ4"]
+
 
 
    [content/level-separator "contact"]

@@ -131,3 +131,19 @@
      ]]]) ;; End of contact
 
 
+
+(defn youtube-embed
+  [video-id]
+  [:div {:class "container"}
+   [:div {:class "box"}
+    [:h2 {:class "title has-text-centered"}
+     "SciCloj Community workshops"]
+    [:div {:class "column"}
+
+     [:iframe {:class             "embed-responsive-item"
+               :allow-full-screen "allowfullscreen"
+               :frame-border      0
+               :auto-play         1
+               :src               (str "https://www.youtube.com/embed/"
+                                       (if (nil? video-id)
+                                         "UQYJiMAadZ4" video-id))}]]]])
