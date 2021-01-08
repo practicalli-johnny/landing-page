@@ -2,7 +2,8 @@
   (:require
    [goog.dom :as gdom]
    [reagent.core :as reagent :refer [atom]]
-   [reagent.dom :as rdom]))
+   [reagent.dom :as rdom]
+   [scicloj.landing-page-content :as content]))
 
 ;; Basic logging / debugging
 
