@@ -28,6 +28,8 @@
   "The layout of components on the main page."
   []
   [:div
+   [content/navigation (get @app-state :website-assets)]
+
    ])
 
 
