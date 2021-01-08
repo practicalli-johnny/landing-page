@@ -1,0 +1,6 @@
+^{:watch-dirs   ["src"]
+  :css-dirs     ["resources/public/css"]
+  :auto-testing false
+  }
+{:main      scicloj.landing-page
+ :output-to "docs/js/scicloj-landing-page.js"}
