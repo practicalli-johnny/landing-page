@@ -55,3 +55,31 @@
 
 ;; Content components
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+(defn title-banner
+  "Top banner and navigation for the website"
+  [web-assets]
+  [:section {:class "section"}
+   [:div {:class "container"}
+    [:div {:class "columns is-vcentered"}
+
+     [:div {:class "column is-2 is-offset-1"}
+      [:img {:src   (:logo web-assets)
+             :width "120px"}]]
+
+     [:div {:class "column"}
+      [:h1 {:class "title is-1"}
+       "SciCloj Community"]
+      [:h3 {:class "subtitle"}
+       "(conj {} :data-science :clojure)"]
+      [:div {:div "content"}
+       "Getting started with data science and Clojure, "
+       [:a {:href "https://scicloj.github.io/pages/libraries/"}
+        "using Clojure libraries and tools"]
+       " to transform data, create models and develop rich visualisations.  Follow guides to install and get started with "
+       [:a {:href "http://practicalli.github.io/clojure/clojure-tools/install/"}
+        "Clojure"]
+       "."]]
+     ]]])
+

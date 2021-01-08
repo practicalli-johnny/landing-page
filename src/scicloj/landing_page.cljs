@@ -33,6 +33,8 @@
   [:div
    [content/navigation (get-in @app-state [:website-assets :scicloj])]
 
+   [content/title-banner (get-in @app-state [:website-assets :scicloj])]
+
 
    ])
 
