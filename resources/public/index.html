@@ -15,5 +15,19 @@
     <!-- Font Awesome icons  -->
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
 
+    <!-- Script for Bulma hamburger menu -->
+    <!-- https://www.adam-bray.com/2018/04/03/responsive-bulma-css-navigation-bar/ -->
+    <script>
+     (function() {
+       var burger = document.querySelector('.burger');
+       var nav = document.querySelector('#'+burger.dataset.target);
+
+       burger.addEventListener('click', function(){
+         burger.classList.toggle('is-active');
+         nav.classList.toggle('is-active');
+       });
+     })();
+    </script>
+
   </body>
 </html>
