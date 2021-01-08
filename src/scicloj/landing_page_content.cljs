@@ -34,10 +34,10 @@
           :href  "/"}
       [:img {:src (:banner website-assets)}]]
      [:span {:class       "navbar-burger burger"
-             :data-target "navbarPracticalli"}
+             :data-target "navbarScicloj"}
       ;; Empty spans needed for navbar burger
       [:span][:span][:span]]]
-    [:div {:id    "navbarPracticalli"
+    [:div {:id    "navbarScicloj"
            :class "navbar-menu"}
      [:div {:class "navbar-start"}
 
