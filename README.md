@@ -34,11 +34,12 @@ To clean all compiled files:
 
     rm -rf target/public
 
-To create a production build run:
+Create a build in the `/docs` directory and
 
     rm -rf target/public
-    clojure -M:figwheel:minify
+    clojure -M:figwheel:live
 
+Commit the changed `/docs/js/scicloj-landing-page.js` file to the Git repository and push to GitHub.  After a few minutes the new version of the landing page will be available at https://scicloj.github.io/scicloj/landing-page-application
 
 ## License
 
