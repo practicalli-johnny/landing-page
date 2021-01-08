@@ -12,7 +12,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; define your app data so that it doesn't get over-written on reload
-(defonce app-state (atom {:text "Hello world!"}))
+(defonce app-state (atom {:page-title "SciCloj Clojure Data Science Community"}))
 
 
 ;; Application
@@ -21,9 +21,9 @@
 (defn multiply [a b] (* a b))
 
 
-(defn hello-world []
+(defn page []
   [:div
-   [:h1 (:text @app-state)]
+   [:h1 (:page-title @app-state)]
    [:h3 "Edit this in src/scicloj/landing_page.cljs and watch it change!"]])
 
 
@@ -33,12 +33,12 @@
 (defn get-app-element []
   (gdom/getElement "app"))
 
-(defn mount [el]
-  (rdom/render [hello-world] el))
+(defn mount [element]
+  (rdom/render [page] element))
 
 (defn mount-app-element []
-  (when-let [el (get-app-element)]
-    (mount el)))
+  (when-let [element (get-app-element)]
+    (mount element)))
 
 ;; conditionally start your application based on the presence of an "app" element
 ;; this is particularly helpful for testing this ns without launching the app
