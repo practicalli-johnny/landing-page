@@ -13,7 +13,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; define your app data so that it doesn't get over-written on reload
-(defonce app-state (atom {:page-title "SciCloj Clojure Data Science Community"}))
+(defonce app-state
+  (atom {:page-title     "SciCloj Clojure Data Science Community"
+         :website-assets {:scicloj-logo "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-banner.png"}}))
 
 
 ;; Application
