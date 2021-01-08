@@ -21,10 +21,11 @@
 (defn multiply [a b] (* a b))
 
 
-(defn page []
+(defn page-layout
+  "The layout of components on the main page."
+  []
   [:div
-   [:h1 (:page-title @app-state)]
-   [:h3 "Edit this in src/scicloj/landing_page.cljs and watch it change!"]])
+   ])
 
 
 ;; System components
@@ -34,7 +35,7 @@
   (gdom/getElement "app"))
 
 (defn mount [element]
-  (rdom/render [page] element))
+  (rdom/render [page-layout] element))
 
 (defn mount-app-element []
   (when-let [element (get-app-element)]
