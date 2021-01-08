@@ -16,7 +16,7 @@
     [:div {:class "navbar-brand"}
      [:a {:class "navbar-item"
           :href  "/"}
-      [:img {:src (:scicloj-logo website-assets)}]]
+      [:img {:src (:banner website-assets)}]]
      [:span {:class       "navbar-burger burger"
              :data-target "navbarPracticalli"}
       ;; Empty spans needed for navbar burger

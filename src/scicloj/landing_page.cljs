@@ -14,8 +14,11 @@
 
 ;; define your app data so that it doesn't get over-written on reload
 (defonce app-state
-  (atom {:page-title     "SciCloj Clojure Data Science Community"
-         :website-assets {:scicloj-logo "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-banner.png"}}))
+  (atom {:page-title "SciCloj Clojure Data Science Community"
+         :website-assets
+         {:scicloj
+          {:logo   "https://raw.githubusercontent.com/scicloj/graphic-design/live/sci-cloj-logo-name-white-background.png"
+           :banner "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-banner.png"}
 
 
 ;; Application
@@ -28,7 +31,8 @@
   "The layout of components on the main page."
   []
   [:div
-   [content/navigation (get @app-state :website-assets)]
+   [content/navigation (get-in @app-state [:website-assets :scicloj])]
+
 
    ])
 
