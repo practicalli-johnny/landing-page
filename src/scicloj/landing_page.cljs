@@ -4,20 +4,34 @@
    [reagent.core :as reagent :refer [atom]]
    [reagent.dom :as rdom]))
 
+;; Basic logging / debugging
+
 (println "This text is printed from src/scicloj/landing_page.cljs. Go ahead and edit it and see reloading in action.")
 
-(defn multiply [a b] (* a b))
+;; Application State
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; define your app data so that it doesn't get over-written on reload
 (defonce app-state (atom {:text "Hello world!"}))
 
-(defn get-app-element []
-  (gdom/getElement "app"))
+
+;; Application
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defn multiply [a b] (* a b))
+
 
 (defn hello-world []
   [:div
    [:h1 (:text @app-state)]
    [:h3 "Edit this in src/scicloj/landing_page.cljs and watch it change!"]])
+
+
+;; System components
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defn get-app-element []
+  (gdom/getElement "app"))
 
 (defn mount [el]
   (rdom/render [hello-world] el))
