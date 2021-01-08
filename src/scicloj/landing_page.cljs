@@ -20,6 +20,27 @@
           {:logo   "https://raw.githubusercontent.com/scicloj/graphic-design/live/sci-cloj-logo-name-white-background.png"
            :banner "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-banner.png"}
 
+          ;; TODO: replace logos with SciCloj specific (or generic) logos
+
+          }
+
+         :contact-channels
+         {:slack {:clojurians "https://clojurians.slack.com/"
+                  :scicloj    {:url  "https://clojurians.slack.com/messages/data-science"
+                               :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-slack-channel.png"}
+                  :beginners  "https://clojurians.zulipchat.com/#narrow/stream/beginners"}
+
+          :zulip {:clojurians   "https://clojurians.zulipchat.com/"
+                  :scicloj      {:url  "https://clojurians.zulipchat.com/#narrow/stream/scicloj"
+                                 :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-zulip-channel.png"}
+                  :events       "https://clojurians.zulipchat.com/#narrow/stream/events"
+                  :data-science "https://clojurians.zulipchat.com/#narrow/stream/data-science"}
+
+          :discord {:not-slack {:register ""
+                                :url      ""
+                                :logo     "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-discord-channel.png"}}}
+         }))
+
 
 ;; Application
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -35,6 +56,10 @@
 
    [content/title-banner (get-in @app-state [:website-assets :scicloj])]
 
+
+
+   [content/level-separator "contact"]
+   [content/contact (get @app-state :contact-channels)]
 
    ])
 

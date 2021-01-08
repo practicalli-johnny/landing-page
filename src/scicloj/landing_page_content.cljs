@@ -99,3 +99,35 @@
        "."]]
      ]]])
 
+
+
+
+(defn contact
+  "Contact channels for the SciCloj community"
+  [contact-channels]
+  [:div {:class "container"}
+   [:div {:class "box"}
+    [:h2 {:class "title has-text-centered"}
+     "Contact and Feedback"]
+    [:div {:class "columns"}
+
+     [:div {:class "column"}
+      [:a {:href   (get-in contact-channels [:zulip :scicloj :url])
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src (get-in contact-channels [:zulip :scicloj :logo])}]]]]
+
+     [:div {:class "column"}
+      [:a {:href   (get-in contact-channels [:slack :scicloj :url])
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src (get-in contact-channels [:slack :scicloj :logo])}]]]
+
+      [:a {:href   "http://clojurians.net"
+           :target "_blank"}
+       [:p {:class "has-text-centered"}
+        "Sign up for a free account to the Clojurians Slack community"]]]
+
+     ]]]) ;; End of contact
+
+
