@@ -39,7 +39,17 @@
           :discord {:not-slack {:register ""
                                 :url      ""
                                 :logo     "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-discord-channel.png"}}}
-         }))
+         
+         :external-content 
+         {:youtube [{:id "LxZ80XUmnjM"
+                     :title "Building a positive SciCloj communityfd"}
+                    {:id "3zXnmV5Hzg8"
+                     :title "How to build a data science community"}
+                    {:id "LxZ80XUmnjM"
+                     :title "Building a positive SciCloj communityfd"}
+                    {:id "3zXnmV5Hzg8"
+                     :title "How to build a data science community"}]
+          }}))
 
 
 ;; Application
