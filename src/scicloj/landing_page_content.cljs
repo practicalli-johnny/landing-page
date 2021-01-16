@@ -148,10 +148,38 @@
         "Sign up for a free account to the Clojurians Slack community"]]]
 
      ]]]) ;; End of contact
+(defn youtube-embed-video
+  "Argument: YouTube video id as a string
+   Returns:
+    Column containing an iframe for a YouTube video as hiccup"
+  [video-id]
+  [:div {:class "column is-3"}
+   [:figure {:class "image"}
+    [:iframe {:class             "embed-responsive-item"
+              :allow-full-screen "allowfullscreen"
+              :frame-border      0
+              :auto-play         1
+              :src               (str "https://www.youtube.com/embed/"
+                                   (or  video-id "NDrpclY54E0"))}]]])
 
 
+(defn youtube-gallery
+  "."
+  [videos]
+  [:div {:class "container"}
+   [:div {:class "box"}
+    [:h2 {:class "title has-text-centered"}
+     "SciCloj Community videos"]
+    [:div {:class "columns"}
+     (for [video videos]
+       (youtube-embed-video (:id video)))]]])
 
-(defn youtube-embed
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Deprecated
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+#_(defn youtube-embed
   [video-id]
   [:div {:class "container"}
    [:div {:class "box"}
@@ -166,3 +194,4 @@
                :src               (str "https://www.youtube.com/embed/"
                                        (if (nil? video-id)
                                          "NDrpclY54E0" video-id))}]]]])
+

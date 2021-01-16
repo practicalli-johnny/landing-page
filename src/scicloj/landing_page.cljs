@@ -69,7 +69,7 @@
    ;; Embed YouTube video
    ;; TODO: improve layout? add several videos in a column?
    [content/level-separator "videos-broadcasts"]
-   [content/youtube-embed "NDrpclY54E0"]
+   [content/youtube-gallery (-> @app-state :external-content :youtube)]
 
 
    [content/level-separator "books"]
