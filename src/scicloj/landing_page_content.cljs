@@ -145,7 +145,10 @@
 
 
 (defn youtube-embed-video
-  "Argument: YouTube video id as a string
+  "Generate an iframe to display a YouTube video,
+  using a default video id as a backup value
+
+   Argument: YouTube video id as a string
    Returns:
     Column containing an iframe for a YouTube video as hiccup"
   [video-id]
@@ -156,18 +159,19 @@
               :frame-border      0
               :auto-play         1
               :src               (str "https://www.youtube.com/embed/"
-                                   (or  video-id "NDrpclY54E0"))}]]])
+                                      (or  video-id "NDrpclY54E0"))}]]])
 
 
 (defn youtube-gallery
-  "."
+  "Display 4 videos after shuffling the available videos"
   [videos]
   [:div {:class "container"}
    [:div {:class "box"}
     [:h2 {:class "title has-text-centered"}
-     "SciCloj Community videos"]
+     [:a {:href "https://www.youtube.com/scicloj"}
+      "SciCloj Community videos"]]
     [:div {:class "columns"}
-     (for [video videos]
+     (for [video (take 4 (shuffle videos))]
        (youtube-embed-video (:id video)))]]])
 
 
