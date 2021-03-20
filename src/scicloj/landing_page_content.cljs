@@ -113,12 +113,7 @@
       "Live coding broadcasts to learn together"]
      [:figure {:class "image"}
       [:img {:src    (:banner web-assets)
-             :height "120px"}]]]
-    ]]
-
-  )
-
-
+             :height "120px"}]]]]])
 
 
 (defn contact
@@ -146,8 +141,9 @@
            :target "_blank"}
        [:p {:class "has-text-centered"}
         "Sign up for a free account to the Clojurians Slack community"]]]
-
      ]]]) ;; End of contact
+
+
 (defn youtube-embed-video
   "Argument: YouTube video id as a string
    Returns:
