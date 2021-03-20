@@ -11,6 +11,12 @@ The main page of the ClojureScript application is defined in the `scicloj.landin
 
 ## Development
 
+Project created with [clj-new](http://practicalli.github.io/clojure/clojure-tools/projects/create.html) and [Clojure CLI tools](http://practicalli.github.io/clojure/clojure-tools/using-clojure-tools.html)
+
+```shell
+clojure -X:project/new :template figwheel-main :name scicloj/landing-page :args '["--reagent"]'
+```
+
 To get an interactive development environment run:
 
     clojure -M:figwheel:build
@@ -22,6 +28,23 @@ get a Browser Connected REPL. An easy way to try it is:
     (js/alert "Am I connected?")
 
 and you should see an alert in the browser window.
+
+
+## Using an editor and terminal REPL
+Start a REPL in the terminal with support for nREPL and CIDER middleware (Cider, Calva, Conjure)
+
+```shell
+clojure -M:figwheel:middleware/cider-cljs
+```
+
+Open the project in the editor and with `deps.edn` or a `.cljs` file open from the project, select the connect command in the editor.
+
+Select `Clojure CLI tools`
+
+Select `figwheel-main`
+
+Select `dev` build
+
 
 ## Test project
 Run project tests using the command:
