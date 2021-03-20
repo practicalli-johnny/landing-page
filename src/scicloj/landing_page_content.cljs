@@ -88,7 +88,7 @@
       [:h1 {:class "title is-1"}
        "SciCloj Community"]
       [:h3 {:class "subtitle"}
-       "(conj {} :data-science :clojure)"]
+       "(into {} :data-science :clojure)"]
       [:div {:div "content"}
        "Getting started with data science and Clojure, "
        [:a {:href "https://scicloj.github.io/pages/libraries/"}
