@@ -132,6 +132,12 @@
         [:img {:src (get-in contact-channels [:zulip :scicloj :logo])}]]]]
 
      [:div {:class "column"}
+      [:a {:href   (get-in contact-channels [:zulip :events :url])
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src (get-in contact-channels [:zulip :events :logo])}]]]]
+
+     [:div {:class "column"}
       [:a {:href   (get-in contact-channels [:slack :scicloj :url])
            :target "_blank"}
        [:figure {:class "image"}

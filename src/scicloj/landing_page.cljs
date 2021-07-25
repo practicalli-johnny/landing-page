@@ -25,20 +25,13 @@
           }
 
          :contact-channels
-         {:slack {:clojurians "https://clojurians.slack.com/"
-                  :scicloj    {:url  "https://clojurians.slack.com/messages/data-science"
-                               :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-slack-channel.png"}
-                  :beginners  "https://clojurians.zulipchat.com/#narrow/stream/beginners"}
+         {:slack {:scicloj {:url  "https://clojurians.slack.com/messages/data-science"
+                            :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/button-data-science-slack-channel.png"}}
 
-          :zulip {:clojurians   "https://clojurians.zulipchat.com/"
-                  :scicloj      {:url  "https://clojurians.zulipchat.com/#narrow/stream/scicloj"
-                                 :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-zulip-channel.png"}
-                  :events       "https://clojurians.zulipchat.com/#narrow/stream/events"
-                  :data-science "https://clojurians.zulipchat.com/#narrow/stream/data-science"}
-
-          :discord {:not-slack {:register ""
-                                :url      ""
-                                :logo     "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-discord-channel.png"}}}
+          :zulip {:scicloj {:url  "https://clojurians.zulipchat.com/#narrow/stream/data-science"
+                            :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/button-data-science-zulip-channel.png"}
+                  :events  {:url "https://clojurians.zulipchat.com/#narrow/stream/events"
+                            :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/button-events-channel.png"}}}
 
          :external-content
          {:youtube [{:id    "3zXnmV5Hzg8"
