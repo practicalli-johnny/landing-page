@@ -90,13 +90,20 @@
       [:h2 {:class "subtitle"}
        "(into {:data-science \"?\"} {:data-science :clojure})"]
       [:div {:div "content"}
-       "Getting started with data science and Clojure, "
-       [:a {:href "https://scicloj.github.io/pages/libraries/"}
-        "using Clojure libraries and tools"]
-       " to transform data, create models and develop rich visualisations.  Follow guides to install and get started with "
-       [:a {:href "http://practicalli.github.io/clojure/clojure-tools/install/"}
-        "Clojure"]
-       "."]]
+       [:p "A friendly and welcoming community to guide you into the fascinating journey of data science with Clojure, using the highly interactive "
+        [:a {:href "https://practical.li/clojure/repl-driven-devlopment.html"}
+         "REPL driven development approach"]]
+       [:p "Discover the "
+        [:a {:href "https://scicloj.github.io/pages/libraries/"}
+         "Clojure libraries and tools"]
+        " to transform data, create models and develop rich visualisations."]
+       [:p "Follow SciCloj guides so learn how to apply Clojure libraries and tools to solve data science related problems"
+
+        #_[:a {:href ""}
+         "many aspects of data science"]
+        ]]]
+     ]]])
+
      ]]])
 
 
