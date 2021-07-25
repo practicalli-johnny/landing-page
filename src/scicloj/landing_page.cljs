@@ -18,11 +18,16 @@
          :website-assets
          {:scicloj
           {:logo   "https://raw.githubusercontent.com/scicloj/graphic-design/live/sci-cloj-logo-name-white-background.png"
-           :banner "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-banner.png"}
+           :banner "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-banner.png"}}
 
-          ;; TODO: replace logos with SciCloj specific (or generic) logos
+         :tools {:repl-driven-development
+                 {:notespace {:url "https://github.com/scicloj/notespace"
+                              :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/data-science-clojure-notebook.png"}
+                  :gorilla-repl {:url ""}}
 
-          }
+                 :data-wrangling {}
+                 :visualisation {:oz {:url "https://github.com/metasoarous/oz"
+                                      :logo "https://raw.githubusercontent.com/metasoarous/oz/master/resources/oz/public/oz.svg"}}}
 
          :contact-channels
          {:slack {:scicloj {:url  "https://clojurians.slack.com/messages/data-science"
@@ -110,10 +115,11 @@
    [content/level-separator "videos-broadcasts"]
    [content/youtube-gallery (-> @app-state :external-content :youtube)] ;; [{:id "" :title ""} ,,,]
 
+   [content/level-separator "getting-started"]
+   [content/getting-started (-> @app-state :tools)]
 
    [content/level-separator "books"]
    [content/clojure-data-science-book (get-in @app-state [:website-assets :scicloj])]
-
 
    [content/level-separator "contact"]
    [content/contact (get @app-state :contact-channels)]

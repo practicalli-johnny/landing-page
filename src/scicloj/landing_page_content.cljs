@@ -104,7 +104,60 @@
         ]]]
      ]]])
 
-     ]]])
+
+(defn getting-started
+  "Getting Started for the SciCloj community"
+  [resources]
+  [:div {:class "container"}
+   [:div {:class "box"}
+    [:div {:class "column"}
+
+     ;; heading
+     [:h2 {:class "title has-text-centered"}
+      "Getting Started"]
+
+     ;; Tooling
+     [:div {:class "column"}
+      [:div {:class "box"}
+       [:div {:class "columns"}
+        [:div {:class "column"}
+         [:a {:href   (-> resources :repl-driven-development :notespace :url)
+              :target "_blank"}
+          [:figure {:class "image"}
+           [:img {:src (-> resources :repl-driven-development :notespace :logo)}]]]]
+        [:div {:class "column"}
+         [:h2 {:class "title has-text-centered"}
+          "Tools & Notebooks"]
+         [:p "REPL driven development with Clojure Editors and Notebooks"]]]]
+
+      ;; Data Wrangling
+      [:div {:class "column"}
+       [:div {:class "box"}
+        [:div {:class "columns"}
+         [:div {:class "column"}
+          [:a {:href   (-> resources :data-wrangling :url)
+               :target "_blank"}
+           [:figure {:class "image"}
+            [:img {:src (-> resources :data-wrangling :logo)}]]]]]
+        [:div {:class "column"}
+         [:h2 {:class "title has-text-centered"}
+          "Data Wrangling"]
+         [:p "Transforming and manipulating data into an appropriate shape for processing with the next function"]]]]
+
+      ;; Visualization
+      [:div {:class "column"}
+       [:div {:class "box"}
+        [:div {:class "columns"}
+         [:div {:class "comumn"}
+          [:a {:href   (-> resources :data-wrangling :url)
+               :target "_blank"}
+           [:figure {:class "image"}
+            [:img {:src (-> resources :visualisation :logo)}]]]]]
+        [:div {:class "column"}
+         [:h2 {:class "title has-text-centered"}
+          "Data Visualisation"]
+         [:p "Making sense of data for a wider audience"]]]]
+      ]]]])
 
 
 
