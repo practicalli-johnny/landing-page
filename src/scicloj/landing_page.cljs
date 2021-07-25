@@ -38,7 +38,7 @@
 
           :zulip {:scicloj {:url  "https://clojurians.zulipchat.com/#narrow/stream/data-science"
                             :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/button-data-science-zulip-channel.png"}
-                  :events  {:url "https://clojurians.zulipchat.com/#narrow/stream/events"
+                  :events  {:url  "https://clojurians.zulipchat.com/#narrow/stream/events"
                             :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/button-events-channel.png"}}}
 
          :external-content
