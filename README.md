@@ -45,6 +45,13 @@ Select `figwheel-main`
 
 Select `dev` build
 
+## Using an Editor to Jack-in
+Cider and Calva should start the project correctly, as long as the `:figwheel` alias is added to the jack-in command.
+
+In Cider, use `C-u` (SPC-u in Spacemacs) followed by the `cider-jack-in-cljs` command to edit the Leiningen or Clojure CLI command and add `:figwheel` to the existing alias on the command line shown in the mini-buffer
+
+In Calva, select the `:figwheel` checkbox for aliases
+
 
 ## Test project
 Run project tests using the command:
