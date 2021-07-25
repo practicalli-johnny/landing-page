@@ -21,13 +21,16 @@
            :banner "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-banner.png"}}
 
          :tools {:repl-driven-development
-                 {:notespace {:url "https://github.com/scicloj/notespace"
-                              :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/data-science-clojure-notebook.png"}
-                  :gorilla-repl {:url ""}}
+                 {:url  "https://github.com/scicloj/notespace"
+                  :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/data-science-clojure-notebook.png"}
 
-                 :data-wrangling {}
-                 :visualisation {:oz {:url "https://github.com/metasoarous/oz"
-                                      :logo "https://raw.githubusercontent.com/metasoarous/oz/master/resources/oz/public/oz.svg"}}}
+                 :data-wrangling
+                 {:url  "https://github.com/scicloj/tablecloth"
+                  :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/data-science-clojure-data-wrangling.png"}
+
+                 :visualisation
+                 {:url  "https://github.com/metasoarous/oz"
+                  :logo "https://raw.githubusercontent.com/practicalli/oz-visualisations/master/resources/public/oz-visualizing-the-weather.png"}}
 
          :contact-channels
          {:slack {:scicloj {:url  "https://clojurians.slack.com/messages/data-science"
