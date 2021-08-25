@@ -18,22 +18,24 @@
          :website-assets
          {:scicloj
           {:logo   "https://raw.githubusercontent.com/scicloj/graphic-design/live/sci-cloj-logo-name-white-background.png"
-         :tools {:repl-driven-development
-                 {:url  "https://github.com/scicloj/notespace"
-                  :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/data-science-clojure-notebook.png"}
-
-                 :data-wrangling
-                 {:url  "https://github.com/scicloj/tablecloth"
-                  :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/data-science-clojure-data-wrangling.png"}
-
-                 :visualisation
-                 {:url  "https://github.com/metasoarous/oz"
-                  :logo "https://raw.githubusercontent.com/practicalli/oz-visualisations/master/resources/public/oz-visualizing-the-weather.png"}}
            :banner "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-text-banner.png"
            :blog "https://scicloj.github.io/blog/"
            :guides "https://scicloj.github.io/guides/"
            :handbook {:url "https://scicloj.github.io/scicloj-data-science-handbook/"
                       :logo "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-handbook-banner.png"}
+           :tools {:url "https://scicloj.github.io/guides/tools/"
+                   :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/data-science-clojure-notebook.png"}
+           :data-wrangling {:url "https://scicloj.github.io/guides/data-wrangling/"
+                            :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/data-science-clojure-data-wrangling.png"}
+           :data-visualization {:url "https://scicloj.github.io/guides/data-visualization/"
+                                :logo "https://raw.githubusercontent.com/practicalli/oz-visualisations/master/resources/public/oz-visualizing-the-weather.png"}}}
+
+         :tools {:notespace {:url  "https://github.com/scicloj/notespace"
+                             :logo ""}
+                 :tablecloth {:url  "https://github.com/scicloj/tablecloth"
+                              :logo ""}
+                 :oz {:url  "https://github.com/metasoarous/oz"
+                      :logo ""}}
 
          :contact-channels
          {:slack {:scicloj {:url  "https://clojurians.slack.com/messages/data-science"

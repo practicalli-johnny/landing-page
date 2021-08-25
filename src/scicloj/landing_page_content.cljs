@@ -89,8 +89,8 @@
         [:a {:href "https://practical.li/clojure/repl-driven-devlopment.html"}
          "REPL driven development approach"]]
        [:p "Discover the "
-        [:a {:href "https://scicloj.github.io/pages/libraries/"}
-         "Clojure libraries and tools"]
+        [:a {:href (:guides web-assets)}
+         "Clojure projects and tools"]
         " to transform data, create models and develop rich visualisations."]
        [:p "Follow SciCloj guides so learn how to apply Clojure libraries and tools to solve data science related problems"
 
@@ -116,10 +116,10 @@
       [:div {:class "box"}
        [:div {:class "columns"}
         [:div {:class "column"}
-         [:a {:href   (-> resources :repl-driven-development :url)
+         [:a {:href   (-> resources :tools :url)
               :target "_blank"}
           [:figure {:class "image"}
-           [:img {:src (-> resources :repl-driven-development :logo)}]]]]
+           [:img {:src (-> resources :tools :logo)}]]]]
         [:div {:class "column"}
          [:h2 {:class "title has-text-centered"}
           "Tools & Notebooks"]
@@ -144,16 +144,15 @@
        [:div {:class "box"}
         [:div {:class "columns"}
          [:div {:class "column"}
-          [:a {:href   (-> resources :visualisation :url)
+          [:a {:href   (-> resources :data-visualization :url)
                :target "_blank"}
            [:figure {:class "image"}
-            [:img {:src (-> resources :visualisation :logo)}]]]]
+            [:img {:src (-> resources :data-visualization :logo)}]]]]
 
          [:div {:class "column"}
           [:h2 {:class "title has-text-centered"}
            "Data Visualisation"]
-          [:p "Making sense of data for a wider audience"]]]]]
-      ]]]])
+          [:p "Making sense of data for a wider audience"]]]]]]]]])
 
 
 
