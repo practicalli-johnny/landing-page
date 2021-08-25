@@ -161,15 +161,18 @@
   [web-assets]
   [:div {:class "container"}
    [:div {:class "box"}
-    [:a {:href   "https://scicloj.github.io/scicloj-data-science-handbook/"
-         :target "_blank"}
-     [:h2 {:class "title is-2 has-text-centered"}
-      "Clojure Data Science Handbook"]
-     [:h6 {:class "title is-6 has-text-centered"}
-      "Live coding broadcasts to learn together"]
-     [:figure {:class "image"}
-      [:img {:src    (:banner web-assets)
-             :height "120px"}]]]]])
+
+    [:div {:class "columns"}
+     [:div {:class "column"}
+      [:figure {:class "image"}
+       [:img {:src    (-> web-assets :handbook :logo)
+              :height "120px"}]]]
+     [:div {:class "column"}
+      [:p [:a {:href (-> web-assets :handbook :url)
+               :target "_blank"
+               :class "has-text-weight-bold"}
+           "Clojure Data Science handbook"]
+       " is where the SciCloj community is building up detailed Clojure examples for building data science related applications"]]]]])
 
 
 (defn contact

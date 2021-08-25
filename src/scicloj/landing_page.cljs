@@ -32,6 +32,8 @@
            :banner "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-text-banner.png"
            :blog "https://scicloj.github.io/blog/"
            :guides "https://scicloj.github.io/guides/"
+           :handbook {:url "https://scicloj.github.io/scicloj-data-science-handbook/"
+                      :logo "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-handbook-banner.png"}
 
          :contact-channels
          {:slack {:scicloj {:url  "https://clojurians.slack.com/messages/data-science"
