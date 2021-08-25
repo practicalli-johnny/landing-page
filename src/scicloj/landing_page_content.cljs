@@ -36,33 +36,28 @@
      [:span {:class       "navbar-burger burger"
              :data-target "navbarScicloj"}
       ;; Empty spans needed for navbar burger
-      [:span][:span][:span]]]
+      [:span] [:span] [:span]]]
     [:div {:id    "navbarScicloj"
            :class "navbar-menu"}
      [:div {:class "navbar-start"}
-
       [:a {:class "navbar-item"
-           :href  "/blog/"} "Blog"]
-
+           :href  "#videos"} "Videos"]
       [:a {:class "navbar-item"
-           :href  "#videos-broadcasts"} "Videos"]
-
+           :href  "#getting-started"} "Getting Started"]
       [:a {:class "navbar-item"
-           :href  "#books"} "Books"]
-
+           :href  "#handbook"} "Handbook"]
       [:a {:class "navbar-item"
-           :href  "#contact"} "Contact"]
+           :href  "#contact"} "Contact"]]
 
-      [:a {:class "navbar-item"
-           :href  "#support"} "Support"]
-
-      [:a {:class "navbar-item"
-           :href  "#resources"} "Resources"]
-
+     [:div {:class "navbar-end"}
+      [:a {:class "navbar-item has-text-weight-bold"
+           :href  (website-assets :blog)} "Blog"]
+      [:a {:class "navbar-item has-text-weight-bold"
+           :href  (website-assets :guides)} "Guides"]
       [:span {:class "navbar-item"}
        [:a {:class  "button is-inverted"
             :target "_blank"
-            :href   "https://github.com/scicloj/landing-page-application/issues"}
+            :href   "https://github.com/scicloj/landing-page/issues"}
         [:span {:class "icon"}
          [:i {:class "fab fa-github"}]]
         [:span "Issues/PRs"]]]]]]])

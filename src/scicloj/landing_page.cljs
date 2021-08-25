@@ -18,8 +18,6 @@
          :website-assets
          {:scicloj
           {:logo   "https://raw.githubusercontent.com/scicloj/graphic-design/live/sci-cloj-logo-name-white-background.png"
-           :banner "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-banner.png"}}
-
          :tools {:repl-driven-development
                  {:url  "https://github.com/scicloj/notespace"
                   :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/scicloj/data-science-clojure-notebook.png"}
@@ -31,6 +29,9 @@
                  :visualisation
                  {:url  "https://github.com/metasoarous/oz"
                   :logo "https://raw.githubusercontent.com/practicalli/oz-visualisations/master/resources/public/oz-visualizing-the-weather.png"}}
+           :banner "https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-text-banner.png"
+           :blog "https://scicloj.github.io/blog/"
+           :guides "https://scicloj.github.io/guides/"
 
          :contact-channels
          {:slack {:scicloj {:url  "https://clojurians.slack.com/messages/data-science"
@@ -115,7 +116,7 @@
 
    ;; Embed YouTube video
    ;; TODO: improve layout? add several videos in a column?
-   [content/level-separator "videos-broadcasts"]
+   [content/level-separator "videos"]
    [content/youtube-gallery (-> @app-state :external-content :youtube)] ;; [{:id "" :title ""} ,,,]
 
    [content/level-separator "getting-started"]
