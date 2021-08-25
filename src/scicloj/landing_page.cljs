@@ -114,9 +114,9 @@
   "The layout of components on the main page."
   []
   [:div
-   [content/navigation (get-in @app-state [:website-assets :scicloj])]
+   [content/navigation (-> @app-state :website-assets :scicloj)]
 
-   [content/title-banner (get-in @app-state [:website-assets :scicloj])]
+   [content/title-banner (-> @app-state :website-assets :scicloj)]
 
    ;; Embed YouTube video
    ;; TODO: improve layout? add several videos in a column?
@@ -124,10 +124,10 @@
    [content/youtube-gallery (-> @app-state :external-content :youtube)] ;; [{:id "" :title ""} ,,,]
 
    [content/level-separator "getting-started"]
-   [content/getting-started (-> @app-state :tools)]
+   [content/getting-started (-> @app-state :website-assets :scicloj)]
 
-   [content/level-separator "books"]
-   [content/clojure-data-science-book (get-in @app-state [:website-assets :scicloj])]
+   [content/level-separator "handbook"]
+   [content/clojure-data-science-book (-> @app-state :website-assets :scicloj)]
 
    [content/level-separator "contact"]
    [content/contact (get @app-state :contact-channels)]
