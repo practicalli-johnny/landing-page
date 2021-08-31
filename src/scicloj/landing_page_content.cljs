@@ -92,7 +92,7 @@
         [:a {:href (:guides web-assets)}
          "Clojure projects and tools"]
         " to transform data, create models and develop rich visualisations."]
-       [:p "Follow SciCloj guides so learn how to apply Clojure libraries and tools to solve data science related problems"
+       [:p "Follow SciCloj guides to learn how to apply Clojure libraries and tools to solve data science related problems"
 
         #_[:a {:href ""}
          "many aspects of data science"]
