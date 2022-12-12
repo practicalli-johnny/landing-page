@@ -1,5 +1,7 @@
 # SciCloj landing-page
 
+**DEPRECATED: an example web page to elicit requirements from the community, which didnt really arise**
+
 The main landing page for the SciCloj Clojure data science community, the starting page for discovering the SciCloj community activities and learning about relevant projects.
 
 [Bulma.io CSS library](https://bulma.io/) and [Font Awesome icons](https://fontawesome.com/) are included in the project to assist with the visual design of the landing page.  Bulma styles can be applied to Clojure hiccup-style syntax, `[:h2 {:class "title has-text-centered"} "A Centered title"]`.  See the [practicalli/landing-page app](https://github.com/practicalli/practicalli-landing-page/blob/master/src/practicalli_landing_page/content.cljs) for more examples
